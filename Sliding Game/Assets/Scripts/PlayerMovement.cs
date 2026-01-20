@@ -17,12 +17,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Keyboard.current.dKey.isPressed)
         {
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0); //Move Player right
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange); //Move Player right
         }
 
         if (Keyboard.current.aKey.isPressed)
         {
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0,  0); //Move Player left
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0,  0, ForceMode.VelocityChange); //Move Player left
         }
     }
 }
