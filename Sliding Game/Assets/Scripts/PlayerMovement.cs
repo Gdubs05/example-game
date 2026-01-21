@@ -24,5 +24,11 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0,  0, ForceMode.VelocityChange); //Move Player left
         }
+
+        if (rb.position.y < -1f)
+        {
+            GameManager gm = Object.FindFirstObjectByType<GameManager>();
+            gm.EndGame();
+        }
     }
 }
