@@ -1106,8 +1106,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   rb: {fileID: 1721842172}
-  forwardForce: 2000
-  sidewaysForce: 100
+  forwardForce: 8000
+  sidewaysForce: 120
 --- !u!54 &1721842172
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1221,7 +1221,7 @@ Transform:
   m_GameObject: {fileID: 1721842170}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4, z: -3.6}
+  m_LocalPosition: {x: 0, y: 1, z: -3.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1519,6 +1519,10 @@ PrefabInstance:
     - target: {fileID: 2404223061794030024, guid: 6be67da5c66b84544b42f67d10cc595b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5546225925489573020, guid: 6be67da5c66b84544b42f67d10cc595b, type: 3}
+      propertyPath: m_Mass
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
